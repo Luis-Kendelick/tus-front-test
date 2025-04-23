@@ -10,7 +10,7 @@ import Tus from '@uppy/tus';
 
 function UppyUpload() {
   // IMPORTANT: passing an initializer function to prevent Uppy from being reinstantiated on every render.
-  const [uppy] = useState(() => new Uppy({ autoProceed: true }).use(Tus, {
+  const [uppy] = useState(() => new Uppy({ autoProceed: true, debug: true }).use(Tus, {
     endpoint: 'https://tus-server-test-production.up.railway.app/files', // URL do seu Railway
   }));
 
