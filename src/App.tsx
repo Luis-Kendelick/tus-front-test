@@ -33,7 +33,7 @@ function UppyUpload() {
     locale: {
       strings: audioStringsLocale
     }
-  }).use(Webcam));
+  }).use(Webcam).use(GoogleDrivePicker, GDriveKeys));
 
   const [uppy1] = useState(() => new Uppy({
     autoProceed: true, debug: true, locale: {
@@ -47,7 +47,7 @@ function UppyUpload() {
     onSuccess: (file) => {
       console.log('File successfully uploaded:', file);
     }
-  }).use(GoogleDrivePicker, GDriveKeys));
+  }));
 
   return (
     <div className='w-screen h-screen flex items-center justify-start flex-col gap-5 py-5'>
