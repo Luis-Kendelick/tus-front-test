@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import Uppy from '@uppy/core';
 import { Dashboard } from '@uppy/react';
-import Compressor from '@uppy/compressor';
 import Audio from '@uppy/audio';
 import GoogleDrivePicker from '@uppy/google-drive-picker';
 import Webcam from '@uppy/webcam';
