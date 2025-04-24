@@ -1,3 +1,5 @@
+import { ToasterProps } from "sonner";
+
 export const tusStringLocale = {
   // When `inline: false`, used as the screen reader label for the button that closes the modal.
   closeModal: "Close Modal",
@@ -58,7 +60,7 @@ export const tusStringLocale = {
   },
   // The "powered by Uppy" link at the bottom of the Dashboard.
   poweredBy: "Powered by %{uppy}",
-  addMore: "Add more",
+  addMore: "Adicionar",
   editFileWithFilename: "Edit file %{file}",
   save: "Save",
   cancel: "Cancel",
@@ -108,4 +110,10 @@ export const GDriveKeys = {
     "882685982504-10vt1piqdcbvsl1gg7om1hukvkfiqh3v.apps.googleusercontent.com",
   appId: "882685982504",
   companionUrl: "http://localhost:3020",
+};
+
+export const toastProps: ToasterProps = {
+  duration: 10000,
+  richColors: true,
+  closeButton: true,
 };
