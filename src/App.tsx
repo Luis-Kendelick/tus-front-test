@@ -37,6 +37,9 @@ function UppyUpload() {
 
   const [uppy1] = useState(() => new Uppy({
     autoProceed: true, debug: true, locale: {
+      pluralize: () => {
+        return 2
+      },
       strings: tusStringLocale,
     }
   }).use(Tus, {
